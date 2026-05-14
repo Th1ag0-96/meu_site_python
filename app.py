@@ -16,7 +16,7 @@ if st.session_state.passo == 1:
             st.rerun()
 
 elif st.session_state.passo == 2:
-    st.write("### Parabens voce conseguiu chrgar na proxima tela")
+    st.write("### Parabens voce conseguiu chegar na proxima tela")
     if st.button("Reiniciar"):
         st.session_state.passo = 1
         st.rerun()

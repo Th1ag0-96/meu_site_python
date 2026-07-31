@@ -16,19 +16,19 @@ if "respostas_salvas" not in st.session_state:
 # Suas perguntas do arquivo QuizRussoA1.py
 perguntas = [
     {
-        "enunciado": "1. Сейчас сентябрь, это...",
+        "enunciado": "1. Сейчас сентябрь, это___",
         "opcoes": ["очень", "осень"],
         "correta": "осень",
         "chave": "p1",
     },
     {
-        "enunciado": "2. Марина - очень красивая...",
+        "enunciado": "2. Марина - очень красивая___",
         "opcoes": ["дедушка", "девушка"],
         "correta": "девушка",
         "chave": "p2"
     },
     {
-        "enunciado": "3. Хайнц живёт в Германии, он...",
+        "enunciado": "3. Хайнц живёт в Германии, он___",
         "opcoes": ["немец", "немецкий"],
         "correta": "немец",
         "chave": "p3",
@@ -44,7 +44,38 @@ perguntas = [
         "opcoes": ["могу", "хочу"],
         "correta": "хочу",
         "chave": "p5",
+        },
+    {
+        "enunciado": "6. Вам нравится говорить___?",
+        "opcoes": ["по-русски", "русский язык"],
+        "correta": "по-русски",
+        "chave": "p6",
+        },
+    {
+        "enunciado": "7. Тебе___позвонить домой сегодня.",
+        "opcoes": ["должно", "нужно"],
+        "correta": "нужно",
+        "chave": "p7",
+        },
+    {
+        "enunciado": "8. Им___заплатить за гостиницу на сайте.",
+        "opcoes": ["надо", "рады"],
+        "correta": "надо",
+        "chave": "p8",
+        },
+    {
+        "enunciado": "9. Зимой в России___",
+        "opcoes": ["холодно", "холодный"],
+        "correta": "холодно",
+        "chave": "p9",
+        },
+    {
+        "enunciado": "10. Тебе___нравится Москва?",
+        "opcoes": ["много", "очень"],
+        "correta": "очень",
+        "chave": "p10",
         }
+        
 ]
 
 respostas_usuario = {}
@@ -85,7 +116,7 @@ for p in perguntas:
         
     st.write("---")
 
-nota_para_passar = 3  # Ajustei para 3 já que agora são 4 perguntas!
+nota_para_passar = 6  # Ajustei para 3 já que agora são 4 perguntas!
 total_perguntas = len(perguntas)
 
 # CASO 1: O quiz ainda NÃO foi finalizado (Mostra o botão de Finalizar)
